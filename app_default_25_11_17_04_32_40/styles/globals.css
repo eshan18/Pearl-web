@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/* Font family defaults */
+body {
+  @apply font-body text-brandText bg-brandBg;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+/* Focus outline styles */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: 2px solid #0068B5;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px #0068B5;
+}
+
+/* Scrollbar styling for WebKit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f8fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0068b5;
+  border-radius: 10px;
+  border: 2px solid #f6f8fa;
+}
+
+/* Utility classes for font families */
+.font-heading {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
